@@ -1,0 +1,153 @@
+/* === Base Styles === */
+
+h1 {
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+body {
+    background-color: #d6d9dc;
+    color: #222;
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+/* === Navigation === */
+
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+nav a.active {
+    color: #003d80;
+    text-decoration: underline;
+}
+
+/* === Footer === */
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer p {
+    color: #aaa;
+    font-size: small;
+}
+
+/* === Centered container === */
+
+.centered-container {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 700px;
+    padding: 0 15px;
+}
+
+/* Center block-level elements inside the container */
+.centered-container form,
+.centered-container select,
+.centered-container button,
+.centered-container img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* === Table wrapper for horizontal scroll if needed === */
+
+.table-wrapper {
+    overflow-x: auto;
+    margin: 20px auto;
+    max-width: 700px;
+}
+
+/* === Tables styling === */
+
+.centered-container table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: max-content;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    table-layout: auto;
+}
+
+.centered-container th,
+.centered-container td {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    text-align: left;
+    max-width: 250px;
+}
+
+/* Zebra stripes */
+.centered-container tr:nth-child(even) {
+    background-color: #f2f9ff;
+}
+
+/* Table header styling */
+.centered-container th {
+    background-color: #007bff;
+    color: white;
+    font-weight: 600;
+}
+
+/* === Forms and controls === */
+
+.centered-container form {
+    margin: 20px 0;
+}
+
+.centered-container select,
+.centered-container button {
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+    width: fit-content;
+    min-width: 200px;
+    box-sizing: border-box;
+}
+
+.centered-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.centered-container button:hover {
+    background-color: #0056b3;
+}
+
+/* === Images (e.g. graphs) === */
+
+.centered-container img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
