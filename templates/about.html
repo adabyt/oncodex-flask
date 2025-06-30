@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}About | OncoDex{% endblock %}
+
+{% block content %}
+<div class="centered-container">
+    <h1>About OncoDex</h1>
+    <p><strong>OncoDex</strong> is a web app where users can upload, preview, and analyse datasets stored in CSV files,
+        providing simple summary statistics and visualisations for quick data exploration.</p>
+
+    <h2>Features</h2>
+    <ul style="list-style-type: none; padding-left: 0;">
+        <li>Upload multiple CSV files containing experimental or clinical data</li>
+        <li>Preview datasets in a clean, tabular format</li>
+        <li>View key summary statistics to understand data distribution</li>
+        <li>Visualise numeric columns with bar plots showing means and standard deviations</li>
+    </ul>
+
+    <h2>How to Use</h2>
+    <ol style="list-style-type: none; padding-left: 0;">
+        <li>Navigate to the Upload page to add your CSV files</li>
+        <li>Head to the Analyse page to select a file and explore its contents</li>
+        <li>Review summary statistics and the mean ± standard deviation plots for numeric data</li>
+    </ol>
+
+    <p><i>OncoDex is built with Flask, Pandas, and Matplotlib.</i></p>
+</div>
+{% endblock %}
