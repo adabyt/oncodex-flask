@@ -1,1 +1,7 @@
-
+PatientID,SampleType,GeneA_Expression,GeneB_Expression,Response,,
+P001,Tumor,5.6,8.1,Responder,,
+P002,Normal,3.2,6.9,Non-responder,,
+P003,Tumor,7.4,9.0,Responder,,
+P004,Tumor,4.1,7.2,Non-responder,,
+P005,Normal,2.8,6.5,Non-responder,,
+P006,Tumor,6.7,8.3,Responder,,
