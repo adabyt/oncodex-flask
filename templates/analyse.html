@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}Analyse | OncoDex{% endblock %}
+
+{% block content %}
+<div class="centered-container">
+    <h1>Analyse Data</h1>
+
+    {% if message %}
+    <p style="color: #007bff;">{{ message }}</p>
+    {% endif %}
+
+    {% if files %}
+    <form method="POST" action="/analyse">
+        <label for="selected_file">Choose a file to analyse:</label>
+        <select name="selected_file" id="selected_file" required>
+            <option value="" disabled selected>Select a file</option>
+            {% for file in files %}
+            <option value="{{ file }}" {% if selected_file==file %}selected{% endif %}>{{ file }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Analyse</button>
+    </form>
+    {% endif %}
+
+    {% if preview %}
+    <h2>Preview of {{ selected_file }}</h2>
+    <div class="table-wrapper">
+        {{ preview | safe }}
+    </div>
+    {% endif %}
+
+    {% if summary %}
+    <h2>Summary Statistics</h2>
+    <div class="table-wrapper">
+        {{ summary | safe }}
+    </div>
+    {% endif %}
+
+    {% if plot_url %}
+    <h2>Mean ± Standard Deviation of Numeric Columns in {{ selected_file }}</h2>
+    <img src="data:image/png;base64,{{ plot_url }}" alt="Mean ± Std Dev bar chart">
+    {% endif %}
+</div>
+{% endblock %}
