@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <title>{% block title %}OncoDex{% endblock %}</title>
+</head>
+
+<body>
+  <nav>
+    <a href="/" class="{% if request.path == '/' %}active{% endif %}">Home</a>
+    <a href="/upload" class="{% if request.path == '/upload' %}active{% endif %}">Upload</a>
+    <a href="/analyse" class="{% if request.path == '/analyse' %}active{% endif %}">Analyse</a>
+    <a href="/about" class="{% if request.path == '/about' %}active{% endif %}">About</a>
+  </nav>
+
+  <main>
+    {% block content %}
+    OncoDex
+    {% endblock %}
+  </main>
+
+  <footer>
+    <div class="centered-container">
+      <p>&copy; 2025 OncoDex</p>
+    </div>
+  </footer>
+</body>
+
+</html>
