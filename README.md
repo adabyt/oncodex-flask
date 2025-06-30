@@ -118,3 +118,13 @@ I created OncoDex as a final project for CS50x to bring together key programming
 - 📤 Export summary stats or plots as files
 - 🔍 Add filtering/search for data columns
 - 🔐 Integrate user authentication (login/logout)
+
+---
+
+![Python](https://img.shields.io/badge/Built_with-Python_3.10-blue)
+![Flask](https://img.shields.io/badge/Framework-Flask-lightgrey)
+![Pandas](https://img.shields.io/badge/Data-Pandas-yellow)
+![Matplotlib](https://img.shields.io/badge/Plots-Matplotlib-orange)
+![CS50](https://img.shields.io/badge/CS50x-Project-red)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-Beta-yellow)
