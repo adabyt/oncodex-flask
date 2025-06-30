@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}Upload | OncoDex{% endblock %}
+
+{% block content %}
+<div class="centered-container">
+    <h1>Upload Confirmation</h1>
+
+    {% if message %}
+    <p style="color: #007bff; font-weight: bold;">{{ message }}</p>
+    {% endif %}
+
+    {% if uploaded_files %}
+    <h2>Uploaded Files:</h2>
+    <div class="file-list">
+        {% for filename in uploaded_files %}
+        <div class="file-name">{{ filename }}</div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    <div style="margin-top: 30px;">
+        <a href="/upload" style="font-weight: bold;">Upload another file</a>
+        <br><br>
+        <a href="/analyse" style="font-weight: bold;">Go to Analysis</a>
+    </div>
+</div>
+{% endblock %}
