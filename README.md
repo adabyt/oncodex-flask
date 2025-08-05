@@ -1,23 +1,23 @@
-# 🧬 OncoDex
+# OncoDex
 
 OncoDex is a simple yet powerful web application for biomedical researchers and clinicians to **upload**, **preview**, and **analyse** experimental and clinical datasets. It provides quick access to summary statistics and basic visualisations to facilitate **exploratory data analysis (EDA)** — without writing code.
 
-> 🧪 Final project for [CS50x – Harvard's Introduction to Computer Science](https://cs50.harvard.edu/x/)
+> Final project for [CS50x – Harvard's Introduction to Computer Science](https://cs50.harvard.edu/x/)
 
 ---
 
-## 🚀 Features
+## Features
 
-- 📁 Upload multiple `.csv` datasets
-- 👁️ Preview tabular data directly in the browser
-- 📊 View summary statistics (mean, SD, min, max, etc.)
-- 🧮 Automatically generate **bar plots** of means ± standard deviations for all numeric columns
-- 🎨 Clean, responsive UI styled with custom CSS
-- 🔐 Safe file handling and server-side validation
+- Upload multiple `.csv` datasets
+- Preview tabular data directly in the browser
+- View summary statistics (mean, SD, min, max, etc.)
+- Automatically generate **bar plots** of means ± standard deviations for all numeric columns
+- Clean, responsive UI styled with custom CSS
+- Safe file handling and server-side validation
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer        | Tool        |
 |--------------|-------------|
@@ -30,7 +30,7 @@ OncoDex is a simple yet powerful web application for biomedical researchers and 
 
 ---
 
-## 📦 Requirements
+## Requirements
 
 Create a virtual environment and install dependencies:
 
@@ -50,7 +50,7 @@ Werkzeug==2.3.7
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 ```
 OncoDex/
 ├── app.py                     # Flask app
@@ -71,18 +71,18 @@ OncoDex/
 
 ---
 
-## 🧪 Usage
+## Usage
 Start the app:
 ```bash
 python app.py
 ```
 
 Then open your browser and go to:
-📍 http://127.0.0.1:5000
+> http://127.0.0.1:5000
 
 ---
 
-## 🧭 Navigation
+## Navigation
 
 | Page    | URL Path  | Description                          |
 |---------|-----------|--------------------------------------|
@@ -93,7 +93,7 @@ Then open your browser and go to:
 
 ---
 
-## 📊 Example Output
+## Example Output
 After uploading a dataset, OncoDex automatically:
 - Displays the first five rows
 - Generates summary statistics (mean, std, min, max, etc.)
@@ -102,7 +102,7 @@ After uploading a dataset, OncoDex automatically:
 
 ---
 
-## 📌 Why I Built This
+## Why I Built This
 
 I created OncoDex as a final project for CS50x to bring together key programming concepts:
 - Routing and form handling in Flask
@@ -113,11 +113,11 @@ I created OncoDex as a final project for CS50x to bring together key programming
 
 ---
 
-## ✅ Possible Extensions
-- 📈 Add scatterplots or histograms
-- 📤 Export summary stats or plots as files
-- 🔍 Add filtering/search for data columns
-- 🔐 Integrate user authentication (login/logout)
+## Possible Extensions
+- Add scatterplots or histograms
+- Export summary stats or plots as files
+- Add filtering/search for data columns
+- Integrate user authentication (login/logout)
 
 ---
 
